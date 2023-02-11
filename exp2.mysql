@@ -1,0 +1,27 @@
+mysql> create table patients(patientid int primary key,pname varchar(35),sex varchar(7),pincode int,city varchar(15));
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> desc patients;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| patientid | int(11)     | NO   | PRI | NULL    |       |
+| pname     | varchar(35) | YES  |     | NULL    |       |
+| sex       | varchar(7)  | YES  |     | NULL    |       |
+| pincode   | int(11)     | YES  |     | NULL    |       |
+| city      | varchar(15) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> create table doctor(doctorid int unique,docname varchar(30),sex varchar(5));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc doctor;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| doctorid | int(11)     | YES  | UNI | NULL    |       |
+| docname  | varchar(30) | YES  |     | NULL    |       |
+| sex      | varchar(5)  | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
