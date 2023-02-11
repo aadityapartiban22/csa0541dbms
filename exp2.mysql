@@ -25,3 +25,12 @@ mysql> desc doctor;
 | sex      | varchar(5)  | YES  |     | NULL    |       |
 +----------+-------------+------+-----+---------+-------+
 3 rows in set (0.01 sec)
+ysql> select *from emp;
++------+-------+------+
+| eid  | ename | age  |
++------+-------+------+
+|    1 | ram   |   29 |
++------+-------+------+
+1 row in set (0.00 sec)
+mysql> insert into emp values(2,"varun",21);
+ERROR 3819 (HY000): Check constraint 'emp_chk_1' is violated.
